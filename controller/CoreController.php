@@ -8,7 +8,7 @@ class api{
         $api_url = $url;
         $xpost="";
             if($cost!=""){
-                $xpost = "origin=".$cost['origin']."&destination=".$cost['destination']."&weight=".$cost['origin']."&courier=".$cost['courier']."";
+                $xpost = "origin=".$cost['origin']."&destination=".$cost['destination']."&weight=".$cost['weight']."&courier=".$cost['courier']."";
             }
         $curl = curl_init();
         curl_setopt_array($curl, array(

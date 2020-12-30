@@ -89,8 +89,6 @@
 
                         $array_result = $api->cost($origin, $destination, $weight, $courier);
                         $result = $array_result["rajaongkir"]["results"][0]["costs"];
-                        // var_dump($result);          
-                        // var_dump($result);
 
                         foreach($result as $a) {
                             echo $a["service"].' ';
